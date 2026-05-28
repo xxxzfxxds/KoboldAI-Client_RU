@@ -864,7 +864,7 @@ function exitMemoryMode() {
 	setmodevisibility(adventure);
 	setchatnamevisibility(chatmode);
 	hideMessage();
-	button_actmem.html("Memory");
+	button_actmem.html("Память");
 	show([button_actback, button_actfwd, button_actretry, button_actwi]);
 	input_text.val("");
 	updateInputBudget(input_text[0]);
@@ -1417,7 +1417,7 @@ function setStartState() {
 	show([game_text, button_actmem, button_actwi, button_actback, button_actfwd, button_actretry]);
 	hideMessage();
 	hideWaitAnimation();
-	button_actmem.html("Memory");
+	button_actmem.html("Память");
 	button_actwi.html("W Info");
 	hideAidgPopup();
 	hideSaveAsPopup();
@@ -3726,7 +3726,7 @@ function popup_edit_file(data) {
 	var accept = document.getElementById("popup_accept");
 	accept.classList.add("btn-secondary");
 	accept.classList.remove("btn-primary");
-	accept.textContent = "Save";
+	accept.textContent = "Сохранить";
 	//first, let's clear out our existing data
 	while (popup_list.firstChild) {
 		popup_list.removeChild(popup_list.firstChild);

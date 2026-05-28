@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<title>KoboldAI Client</title>
+	<title>KoboldAI Клиент</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,35 +37,35 @@
 							<ul class="nav navbar-nav">
 								{% if not hide_ai_menu %}
 								<li class="nav-item">
-									<a class="nav-link" href="#" id="btn_loadmodel">AI</a>
+									<a class="nav-link" href="#" id="btn_loadmodel">ИИ</a>
 								</li>
 								{% endif %}
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New Game</a>
+									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Новая игра</a>
 									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#" id="btn_newgame">Blank Story</a>
-										<a class="dropdown-item" href="#" id="btn_rndgame">Random Story</a>
+										<a class="dropdown-item" href="#" id="btn_newgame">Пустая история</a>
+										<a class="dropdown-item" href="#" id="btn_rndgame">Случайная история</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown always-available">
-									<a class="nav-link dropdown-toggle always-available" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Save</a>
+									<a class="nav-link dropdown-toggle always-available" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сохранить</a>
 									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#" id="btn_save">Save</a>
-										<a class="dropdown-item" href="#" id="btn_saveas">Save As</a>
-										<a class="dropdown-item" href="#" id="btn_savetofile">Save To File...</a>
-										<a class="dropdown-item always-available" href="#" id="btn_download">Download Story as JSON</a>
-										<a class="dropdown-item" href="#" id="btn_downloadtxt">Download Story as Plaintext</a>
+										<a class="dropdown-item" href="#" id="btn_save">Сохранить</a>
+										<a class="dropdown-item" href="#" id="btn_saveas">Сохранить как</a>
+										<a class="dropdown-item" href="#" id="btn_savetofile">Сохранить в файл...</a>
+										<a class="dropdown-item always-available" href="#" id="btn_download">Скачать историю как JSON</a>
+										<a class="dropdown-item" href="#" id="btn_downloadtxt">Скачать историю как текст</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Load</a>
+									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Загрузить</a>
 									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#" id="btn_load">Load</a>
-										<a class="dropdown-item" href="#" id="btn_loadfromfile">Load From File...</a>
+										<a class="dropdown-item" href="#" id="btn_load">Загрузить</a>
+										<a class="dropdown-item" href="#" id="btn_loadfromfile">Загрузить из файла...</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Import</a>
+									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Импорт</a>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" href="#" id="btn_import">AI Dungeon Adventure</a>
 										<a class="dropdown-item" href="#" id="btn_importwi">AI Dungeon World Info</a>
@@ -73,31 +73,31 @@
 									</div>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#" id="btn_settings">Settings</a>
+									<a class="nav-link" href="#" id="btn_settings">Настройки</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#" id="btn_format">Formatting</a>
+									<a class="nav-link" href="#" id="btn_format">Форматирование</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#" id="btn_samplers">Samplers</a>
+									<a class="nav-link" href="#" id="btn_samplers">Сэмплеры</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#" id="btn_userscripts">Userscripts</a>
+									<a class="nav-link" href="#" id="btn_userscripts">Пользовательские скрипты</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link hidden" href="#" id="btn_softprompt">Soft Prompt</a>
+									<a class="nav-link hidden" href="#" id="btn_softprompt">Мягкий промпт</a>
 								</li>
 							</ul>
 						</div>
 					</nav>
 				</div>
 				<div id="connectstatusdiv" class="flex-row-container">
-					<span id="connectstatus" class="color_orange flex-row">Waiting for connection...</span>
+					<span id="connectstatus" class="color_orange flex-row">Ожидание подключения...</span>
 					<div class="layer-container status-container flex-push-left" style="color: #FFFFFF;" id="runtime"></div>
 					<div class="layer-container status-container flex-push-right">
 						<span class="oi oi-puzzle-piece statusicon layer-bottom" aria-hidden="true">
 							<div class="statustext statustext-wide">
-								<div id="stat-us" class="statusheader">No userscripts active</div>
+								<div id="stat-us" class="statusheader">Нет активных пользовательских скриптов</div>
 								<div id="stat-usactive"></div>
 							</div>
 						</span>
@@ -105,7 +105,7 @@
 					</div>
 					<span class="oi oi-lightbulb statusicon" aria-hidden="true">
 						<div class="statustext">
-							<div id="stat-sp" class="statusheader">No soft prompt active</div>
+							<div id="stat-sp" class="statusheader">Нет активного мягкого промпта</div>
 							<div id="stat-spactive"></div>
 						</div>
 					</span>
@@ -130,51 +130,51 @@
 			<div id="curtain" class="layer-top row hidden"></div>
 		</div>
 		<div class="row" id="seqselmenu">
-			<div class="seqselheader">Select sequence to keep:</div>
+			<div class="seqselheader">Выберите последовательность для сохранения:</div>
 			<div id="seqselcontents">
 			</div>
 		</div>
 		<div class="row flex" id="actionmenu">
 			<div id="actionmenuitems">
-				<button type="button" class="btn btn-primary" id="btn_actmem">Memory</button>
-				<button type="button" class="btn btn-primary" id="btn_actwi">W Info</button>
-				<button type="button" class="btn btn-primary" id="btn_actundo">Back</button>
-				<button type="button" class="btn btn-primary" id="btn_actredo">Redo</button>
-				<button type="button" class="btn btn-primary" id="btn_actretry">Retry</button>
+				<button type="button" class="btn btn-primary" id="btn_actmem">Память</button>
+				<button type="button" class="btn btn-primary" id="btn_actwi">Инф. о мире</button>
+				<button type="button" class="btn btn-primary" id="btn_actundo">Назад</button>
+				<button type="button" class="btn btn-primary" id="btn_actredo">Повтор</button>
+				<button type="button" class="btn btn-primary" id="btn_actretry">Повторить</button>
 			</div>
-			<input type="text" id="chatname" class="form-control hidden" placeholder="Chat name">
+			<input type="text" id="chatname" class="form-control hidden" placeholder="Имя чата">
 			<div id="messagefield"></div>
 			<div class="box flex-push-right">
 				<input type="checkbox" data-toggle="toggle" data-onstyle="success" id="allowediting" disabled>
-				<div class="box-label">Allow Editing</div>
+				<div class="box-label">Разрешить редактирование</div>
 			</div>
 		</div>
 		<div class="row">
 			<div id="inputrow">
 				<div id="inputrowmode">
-					<button type="button" class="btn btn-secondary hidden" id="btnmode">Mode:<br/><b id="btnmode_label">Story</b></button>
+					<button type="button" class="btn btn-secondary hidden" id="btnmode">Режим:<br/><b id="btnmode_label">История</b></button>
 				</div>
 				<div id="inputrowleft" class="tokens-counted">
-					<textarea class="form-control" id="input_text" placeholder="Enter text here"></textarea>
+					<textarea class="form-control" id="input_text" placeholder="Введите текст здесь"></textarea>
 				</div>
 				<div id="inputrowright">
-					<button type="button" class="btn btn-secondary" id="btnsend">Wait</button>
+					<button type="button" class="btn btn-secondary" id="btnsend">Ожидание</button>
 				</div>
 			</div>
 			<div id="anoterowcontainer">
 				<div id="anoterow">
 					<div id="anoterowleft">
 						<div class="anotelabel no-padding">
-							Author's Note
+							Заметка автора
 						</div>
 						<div class="anotefield tokens-counted">
-							<textarea class="form-control" placeholder="Author's Note" id="anoteinput"></textarea>
+							<textarea class="form-control" placeholder="Заметка автора" id="anoteinput"></textarea>
 						</div>
 					</div>
 					<div id="anoterowright">
 						<div id="anoteslidelabel">
 							<div class="justifyleft">
-								Depth
+								Глубина
 							</div>
 							<div class="justifyright" id="anotecur">
 								3
@@ -195,96 +195,96 @@
 				</div>
 				<div>
 					<div class="anotelabel">
-						Author's Note Template (the "&lt;|&gt;" will be replaced with the Author's Note text)
+						Заметка автора Template (the "&lt;|&gt;" will be replaced with the Заметка автора text)
 					</div>
 					<div class="anotefield">
-						<textarea class="form-control" placeholder="Author's Note Template" id="anotetemplate"></textarea>
+						<textarea class="form-control" placeholder="Заметка автора Template" id="anotetemplate"></textarea>
 					</div>
 				</div>
 			</div>
 			<div  class="hidden" id="debugcontainer">
-				<textarea class="form-control" placeholder="Debug Info" id="debuginfo"></textarea>
+				<textarea class="form-control" placeholder="Отладочная информация" id="debuginfo"></textarea>
 			</div>
 		</div>
 	</div>
 	<div class="hidden" id="popupcontainer">
 		<div id="popup_old">
 			<div id="popuptitlebar">
-				<div id="popuptitletext">Select an Adventure to Import</div>
+				<div id="popuptitletext">Выберите приключение для импорта</div>
 			</div>
 			<div id="popuplistheader">
-				<div>Title</div>
-				<div># Actions</div>
-				<div>Description</div>
+				<div>Название</div>
+				<div>Действий</div>
+				<div>Описание</div>
 			</div>
 			<div id="popupcontent">
 			</div>
 			<div id="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_popupaccept">Accept</button>
-				<button type="button" class="btn btn-primary" id="btn_popupclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_popupaccept">Принять</button>
+				<button type="button" class="btn btn-primary" id="btn_popupclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="aidgpopupcontainer">
 		<div id="aidgpopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Enter the Prompt Number</div>
+				<div class="popuptitletext">Введите номер промпта</div>
 			</div>
 			<div class="aidgpopuplistheader">
-				(4-digit number at the end of aetherroom.club URL)
+				(4-значное число в конце URL aetherroom.club)
 			</div>
 			<div class="aidgpopupcontent">
-				<input class="form-control" type="text" placeholder="Prompt Number" id="aidgpromptnum">
+				<input class="form-control" type="text" placeholder="Номер промпта" id="aidgpromptnum">
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_aidgpopupaccept">Accept</button>
-				<button type="button" class="btn btn-primary" id="btn_aidgpopupclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_aidgpopupaccept">Принять</button>
+				<button type="button" class="btn btn-primary" id="btn_aidgpopupclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="saveascontainer">
 		<div id="saveaspopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Enter Name For Save</div>
+				<div class="popuptitletext">Введите имя для сохранения</div>
 			</div>
 			<div class="aidgpopupcontent">
-				<input class="form-control" type="text" placeholder="Save Name" id="savename"><br>
+				<input class="form-control" type="text" placeholder="Имя сохранения" id="savename"><br>
 				<input type="checkbox" data-toggle="toggle" data-onstyle="success" id="savepins" checked>
-				<div class="box-label">Save Pin Information</div>
+				<div class="box-label">Сохранить информацию о закладках</div>
 			</div>
 			<div class="popuperror hidden">
 				<span></span>
 			</div>
 			<div class="saveasoverwrite hidden">
-				<span>File already exists. Really overwrite?</span>
+				<span>Файл уже существует. Действительно перезаписать?</span>
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_saveasaccept">Accept</button>
-				<button type="button" class="btn btn-primary" id="btn_saveasclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_saveasaccept">Принять</button>
+				<button type="button" class="btn btn-primary" id="btn_saveasclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="loadcontainer">
 		<div class="loadpopup" id="loadpopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Select A Story To Load</div>
+				<div class="popuptitletext">Select A История To Загрузить</div>
 			</div>
 			<div class="loadlistheader">
-				<div>Save Name</div>
-				<div class="flex-push-right"># Actions</div>
+				<div>Имя сохранения</div>
+				<div class="flex-push-right">Действий</div>
 			</div>
 			<div id="loadlistcontent">
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_loadaccept">Load</button>
-				<button type="button" class="btn btn-primary" id="btn_loadclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_loadaccept">Загрузить</button>
+				<button type="button" class="btn btn-primary" id="btn_loadclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="loadmodelcontainer">
 		<div class="loadpopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Select A Model To Load</div>
+				<div class="popuptitletext">Select A Model To Загрузить</div>
 			</div>
 			<div id="loadmodellistbreadcrumbs">
 				
@@ -292,20 +292,20 @@
 			<div id="loadmodellistcontent" style="overflow: auto; height: 300px;">
 			</div>
 			<div class="popupfooter">
-				<input class="form-control hidden" type="text" placeholder="Enter the URL of the server (For example a trycloudflare link)" id="modelurl" onchange="check_enable_model_load()">
-				<input class="form-control hidden" type="text" placeholder="key" id="modelkey" onblur="socket.send({'cmd': 'OAI_Key_Update', 'key': $('#modelkey')[0].value});">
-				<input class="form-control hidden" type="text" placeholder="Model Path or Hugging Face Name" id="custommodelname" menu="" onblur="socket.send({'cmd': 'selectmodel', 'data': $(this).attr('menu'), 'path_modelname': $('#custommodelname')[0].value});">
+				<input class="form-control hidden" type="text" placeholder="Введите URL сервера (например, ссылку trycloudflare)" id="modelurl" onchange="check_enable_model_load()">
+				<input class="form-control hidden" type="text" placeholder="Ключ" id="modelkey" onblur="socket.send({'cmd': 'OAI_Key_Update', 'key': $('#modelkey')[0].value});">
+				<input class="form-control hidden" type="text" placeholder="Путь к модели или имя Hugging Face" id="custommodelname" menu="" onblur="socket.send({'cmd': 'selectmodel', 'data': $(this).attr('menu'), 'path_modelname': $('#custommodelname')[0].value});">
 			</div>
 			<div class="popupfooter">
-				<select class="form-control hidden" id="oaimodel"><option value="">Select Model(s)</option></select>
+				<select class="form-control hidden" id="oaimodel"><option value="">Выберите модель(и)</option></select>
 			</div>
 			<div class="popupfooter hidden" id=modellayers>
 				<div class='settingitem' style="width:100%">
 					<div class='settinglabel'>
 						<div class="justifyleft">
-							GPU/Disk Layers
+							Слои GPU/Диск
 							<span class="helpicon">?
-								<span class="helptext">Number of layers to assign to GPUs and to disk cache. Remaining layers will be put into CPU RAM.</span>
+								<span class="helptext">Количество слоёв для GPU и дискового кэша. Остальные слои будут размещены в оперативной памяти.</span>
 							</span>
 						</div>
 						<div class="justifyright" id="gpu_layers_current">0</div>
@@ -325,11 +325,11 @@
 				</div>
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_loadmodelaccept">Load</button>
-				<button type="button" class="btn btn-primary" id="btn_loadmodelclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_loadmodelaccept">Загрузить</button>
+				<button type="button" class="btn btn-primary" id="btn_loadmodelclose">Отмена</button>
 				<div class="box flex-push-right hidden" id=use_gpu_div>
 					<input type="checkbox" data-toggle="toggle" data-onstyle="success" id="use_gpu" checked>
-					<div class="box-label">Use GPU</div>
+					<div class="box-label">Использовать GPU</div>
 				</div>
 			</div>
 		</div>
@@ -337,26 +337,26 @@
 	<div class="popupcontainer hidden" id="spcontainer">
 		<div id="sppopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Select A Soft Prompt To Use</div>
+				<div class="popuptitletext">Выберите мягкий промпт для использования</div>
 				<button class="btn btn-primary" onclick="socket.emit('show_folder_soft_prompt', {});"><span class="oi" style="color: white;" data-glyph="folder"></span></button>
 			</div>
 			<div id="splistcontent">
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_spaccept">Load</button>
-				<button type="button" class="btn btn-primary" id="btn_spclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_spaccept">Загрузить</button>
+				<button type="button" class="btn btn-primary" id="btn_spclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="uscontainer">
 		<div id="uspopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Select userscripts to load; drag-and-drop to reorder</div>
+				<div class="popuptitletext">Выберите пользовательские скрипты для загрузки; перетаскивайте для изменения порядка</div>
 				<button class="btn btn-primary" onclick="socket.emit('show_folder_usersripts', {});"><span class="oi" style="color: white;" data-glyph="folder"></span></button>
 			</div>
 			<div class="usheadergrid">
-				<div>[AVAILABLE]</div>
-				<div>[ACTIVE]</div>
+				<div>[ДОСТУПНО]</div>
+				<div>[АКТИВНО]</div>
 			</div>
 			<div class="uslistgrid">
 				<div id="uslistunloaded">
@@ -365,83 +365,83 @@
 				</div>
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_usaccept">Load</button>
-				<button type="button" class="btn btn-primary" id="btn_usclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_usaccept">Загрузить</button>
+				<button type="button" class="btn btn-primary" id="btn_usclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="samplerscontainer">
 		<div id="samplerspopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Drag-and-drop to change the order in which the samplers are applied</div>
+				<div class="popuptitletext">Перетаскивайте для изменения порядка применения сэмплеров</div>
 			</div>
 			<div id="samplerslist">
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_samplersaccept">Save</button>
-				<button type="button" class="btn btn-primary" id="btn_samplersclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_samplersaccept">Сохранить</button>
+				<button type="button" class="btn btn-primary" id="btn_samplersclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="loadcontainerdelete">
 		<div id="loadpopupdelete">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Really Delete Story?</div>
+				<div class="popuptitletext">Really Удалить История?</div>
 			</div>
 			<div class="dialogheader">
-				"<span id="loadcontainerdelete-storyname"></span>" will be PERMANENTLY deleted! You will not be able to recover this story later.
+				"<span id="loadcontainerdelete-storyname"></span>" будет УДАЛЕНА НАВСЕГДА! Вы не сможете восстановить эту историю позже.
 			</div>
 			<div class="popuperror hidden">
 				<span></span>
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-danger" id="btn_dsaccept">Delete</button>
-				<button type="button" class="btn btn-primary" id="btn_dsclose">Cancel</button>
+				<button type="button" class="btn btn-danger" id="btn_dsaccept">Удалить</button>
+				<button type="button" class="btn btn-primary" id="btn_dsclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="loadcontainerrename">
 		<div id="loadpopuprename">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Enter New Name For Story</div>
+				<div class="popuptitletext">Enter New Name For История</div>
 			</div>
 			<div class="dialogheader">
-				What should the story "<span id="loadcontainerrename-storyname"></span>" be renamed to?
-				<input class="form-control" type="text" placeholder="New Save Name" id="newsavename">
+				Как следует переименовать историю "<span id="loadcontainerrename-storyname"></span>" в?
+				<input class="form-control" type="text" placeholder="New Имя сохранения" id="newsavename">
 			</div>
 			<div class="popuperror hidden">
 				<span></span>
 			</div>
 			<div class="saveasoverwrite hidden">
-				<span>File already exists. Really overwrite?</span>
+				<span>Файл уже существует. Действительно перезаписать?</span>
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_rensaccept">Accept</button>
-				<button type="button" class="btn btn-primary" id="btn_rensclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_rensaccept">Принять</button>
+				<button type="button" class="btn btn-primary" id="btn_rensclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden" id="newgamecontainer">
 		<div id="nspopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Really Start A New Story?</div>
+				<div class="popuptitletext">Really Start A New История?</div>
 			</div>
 			<div class="aidgpopuplistheader">
-				Unsaved data will be lost.
+				Несохранённые данные будут потеряны.
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_nsaccept">Accept</button>
-				<button type="button" class="btn btn-primary" id="btn_nsclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_nsaccept">Принять</button>
+				<button type="button" class="btn btn-primary" id="btn_nsclose">Отмена</button>
 			</div>
 		</div>
 	</div>
 	<div class="popupcontainer hidden flex" id="showmodelnamecontainer" style="center;">
 		<div class="loadpopup">
 			<div class="popuptitlebar" style="width:50% center;">
-				<div class="popuptitletext">Model Info</div>
+				<div class="popuptitletext">Информация о модели</div>
 			</div>
 			<div id=showmodelnamecontent style="width:50%;">
-				Model Info Missing
+				Информация о модели Missing
 			</div>
 			<div class="popupfooter" style="width:50% center;">
 				
@@ -451,26 +451,26 @@
 	<div class="popupcontainer hidden" id="rndgamecontainer">
 		<div id="rspopup">
 			<div class="popuptitlebar">
-				<div class="popuptitletext">Really Start A Random Story?</div>
+				<div class="popuptitletext">Really Start A Random История?</div>
 			</div>
 			<div class="aidgpopuplistheader">
 				<br>
-				Story quality and topic depends on the model and your settings/suggestion (Around 0.5 temp is recommended).<br>
-				This feature works best with heavily themed models like the Adventure model and can also be influenced with softprompts .<br>
-				If you get random spam then your model is not capable of using this feature and if you get unrelated stories it does not understand the topic.<br>
-				Generated results are unfiltered and can be offensive or unsuitable for children, the AI can make connections the model/softprompt creator did not intend.<br><br>
-				Unsaved data will be lost.<br><br>
-				Below you can input a genre suggestion for the AI to loosely base the story on (For example Horror or Cowboy).<br>
+				История quality and topic depends on the model and your settings/suggestion (Around 0.5 temp is recommended).<br>
+				Эта функция лучше всего работает с тематическими моделями, такими как Adventure, и также может быть изменена с помощью мягких промптов.<br>
+				Если вы получаете случайный спам, значит ваша модель не способна использовать эту функцию, а если вы получаете несвязанные истории, она не понимает тему.<br>
+				Сгенерированные результаты не фильтруются и могут быть оскорбительными или неподходящими для детей, ИИ может устанавливать связи, которые не предполагались создателем модели/мягкого промпта.<br><br>
+				Несохранённые данные будут потеряны.<br><br>
+				Ниже вы можете ввести предложение жанра для ИИ, чтобы он свободно основывал историю на нём (например, Ужасы или Ковбои).<br>
 			</div>
 			<div class="aidgpopupcontent">
-				<input class="form-control" type="text" placeholder="Story Genre Suggestion (Leave blank for fully random)" id="topic">
+				<input class="form-control" type="text" placeholder="История Genre Suggestion (Leave blank for fully random)" id="topic">
 			</div>
 			<div class="aidgpopupcontent">
-				<textarea class="form-control" placeholder="Memory" id="rngmemory"></textarea>
+				<textarea class="form-control" placeholder="Память" id="rngmemory"></textarea>
 			</div>
 			<div class="popupfooter">
-				<button type="button" class="btn btn-primary" id="btn_rsaccept">Accept</button>
-				<button type="button" class="btn btn-primary" id="btn_rsclose">Cancel</button>
+				<button type="button" class="btn btn-primary" id="btn_rsaccept">Принять</button>
+				<button type="button" class="btn btn-primary" id="btn_rsclose">Отмена</button>
 			</div>
 		</div>
 	</div>
@@ -480,17 +480,17 @@
 		<div class="new_popup">
 			<div style="height:100%;">
 				<div class="title" id="popup_title">
-					Popup Title
+					Popup Название
 				</div>
 				<div id="popup_breadcrumbs"></div>
 				<div class="popup_list_area" id="popup_list"></div>
 				<div class="popup_load_cancel hidden" id="popup_upload">
 				<input type=file id="popup_upload_file">
 			</div>
-			<div style="background-color: black">Drag file(s) above or click here to Upload File<input id="popup_upload_input" type=file onchange="upload_file(this)"></div>
+			<div style="background-color: black">Перетащите файл(ы) выше или нажмите здесь для загрузки файла<input id="popup_upload_input" type=file onchange="upload_file(this)"></div>
 			<div class="popup_load_cancel" id="popup_load_cancel">
-					<button class="btn btn-secondary popup_load_cancel_button" id="popup_accept">Load</button>
-					<button class="btn btn-primary popup_load_cancel_button" id="popup_cancel" onclick='document.getElementById("popup").classList.add("hidden");'>Cancel</button>
+					<button class="btn btn-secondary popup_load_cancel_button" id="popup_accept">Загрузить</button>
+					<button class="btn btn-primary popup_load_cancel_button" id="popup_cancel" onclick='document.getElementById("popup").classList.add("hidden");'>Отмена</button>
 				</div>
 			</div>
 		</div>
