@@ -1,244 +1,244 @@
-## Looking for KoboldCpp?
-KoboldAI is named after the KoboldAI software, currently our newer most popular program is KoboldCpp.
+```markdown
+## Ищете KoboldCpp?
+KoboldAI названа в честь программного обеспечения KoboldAI, в настоящее время нашей более новой и популярной программой является KoboldCpp.
 
-If you are reading this message you are on the page of the original KoboldAI sofware.
+Если вы читаете это сообщение, вы находитесь на странице оригинального программного обеспечения KoboldAI.
 
-Prefer using KoboldCpp with GGUF models and the latest API features? You can visit https://koboldai.org/cpp
+Предпочитаете использовать KoboldCpp с моделями GGUF и новейшими функциями API? Вы можете посетить https://koboldai.org/cpp
 
-Need support for newer models such as Llama based models using the Huggingface / Exllama (safetensors/pytorch) platforms? Check out KoboldAI's development version KoboldAI United at https://koboldai.org/united
+Нужна поддержка новых моделей, таких как модели на основе Llama, использующих платформы Huggingface / Exllama (safetensors/pytorch)? Посмотрите на разрабатываемую версию KoboldAI — KoboldAI United на https://koboldai.org/united
 
-## KoboldAI - Your gateway to GPT writing
+## KoboldAI — Ваш шлюз к GPT-письму
 
-This is a browser-based front-end for AI-assisted writing with multiple local & remote AI models. It offers the standard array of tools, including Memory, Author's Note, World Info, Save & Load, adjustable AI settings, formatting options, and the ability to import existing AI Dungeon adventures. You can also turn on Adventure mode and play the game like AI Dungeon Unleashed.
+Это браузерный интерфейс для написания текстов с помощью ИИ с поддержкой нескольких локальных и удаленных моделей ИИ. Он предлагает стандартный набор инструментов, включая Память, Примечание автора, Мировую информацию, Сохранение и Загрузку, настраиваемые параметры ИИ, опции форматирования и возможность импортировать существующие приключения AI Dungeon. Вы также можете включить Режим приключения и играть в игру как AI Dungeon Unleashed.
 
-## Multiple ways to play
+## Несколько способов игры
 
-Stories can be played like a Novel, a text adventure game or used as a chatbot with an easy toggles to change between the multiple gameplay styles. This makes KoboldAI both a writing assistant, a game and a platform for so much more. The way you play and how good the AI will be depends on the model or service you decide to use. No matter if you want to use the free, fast power of Google Colab, your own high end graphics card, an online service you have an API key for (Like OpenAI or Inferkit) or if you rather just run it slower on your CPU you will be able to find a way to use KoboldAI that works for you.
+В истории можно играть как в роман, текстовую приключенческую игру или использовать как чат-бота с помощью простых переключателей для смены нескольких игровых стилей. Это делает KoboldAI одновременно помощником в написании текстов, игрой и платформой для многого другого. То, как вы играете и насколько хорош будет ИИ, зависит от модели или сервиса, который вы решите использовать. Неважно, хотите ли вы использовать бесплатную, быструю мощность Google Colab, собственную высокопроизводительную видеокарту, онлайн-сервис, для которого у вас есть API-ключ (например, OpenAI или Inferkit), или вы предпочитаете запускать его медленнее на вашем процессоре — вы сможете найти способ использования KoboldAI, который подходит именно вам.
 
-### Adventure mode
+### Режим приключения
 
-By default KoboldAI will run in a generic mode optimized for writing, but with the right model you can play this like AI Dungeon without any issues. You can enable this in the settings and bring your own prompt, try generating a random prompt or download one of the prompts available at [/aids/ Prompts](https://aetherroom.club/).
+По умолчанию KoboldAI работает в универсальном режиме, оптимизированном для написания текстов, но с правильной моделью вы можете играть в нее как в AI Dungeon без каких-либо проблем. Вы можете включить это в настройках и использовать свою собственную подсказку, попробовать сгенерировать случайную подсказку или загрузить одну из подсказок, доступных на [/aids/ Prompts](https://aetherroom.club/).
 
-The gameplay will be slightly different than the gameplay in AI Dungeon because we adopted the Type of the Unleashed fork, giving you full control over all the characters because we do not automatically adapt your sentences behind the scenes. This means you can more reliably control characters that are not you.
+Игровой процесс будет немного отличаться от игрового процесса в AI Dungeon, поскольку мы приняли тип форка Unleashed, давая вам полный контроль над всеми персонажами, потому что мы не автоматически адаптируем ваши предложения за кулисами. Это означает, что вы можете более надежно управлять персонажами, которые не являются вами.
 
-As a result of this what you need to type is slightly different, in AI Dungeon you would type _**take the sword**_ while in KoboldAI you would type it like a sentence such as _**You take the sword**_ and this is best done with the word You instead of I.
+В результате этого то, что вам нужно вводить, немного отличается: в AI Dungeon вы бы ввели _**взять меч**_, в то время как в KoboldAI вы должны вводить это как предложение, например _**Вы берете меч**_, и лучше всего это делать со словом "Вы" вместо "Я".
 
-To speak simply type : _You say "We should probably gather some supplies first"_  
-Just typing the quote might work, but the AI is at its best when you specify who does what in your commands.
+Чтобы говорить, просто введите: _Вы говорите: "Нам, вероятно, стоит сначала собрать припасы"_  
+Просто ввод цитаты может сработать, но ИИ работает лучше всего, когда вы указываете, кто что делает в ваших командах.
 
-If you want to do this with your friends we advise using the main character as You and using the other characters by their name if you are playing on a model trained for Adventures. These models assume there is a You in the story. This mode does usually not perform well on Novel models because they do not know how to handle the input those are best used with regular story writing where you take turns with the AI.
+Если вы хотите делать это с друзьями, мы советуем использовать главного персонажа как "Вы", а других персонажей — по их именам, если вы играете на модели, обученной на приключениях. Эти модели предполагают, что в истории есть "Вы". Этот режим обычно плохо работает на романных моделях, потому что они не знают, как обрабатывать вводные данные; они лучше всего используются для обычного написания историй, где вы чередуетесь с ИИ.
 
-### Writing assistant
+### Помощник в написании
 
-If you want to use KoboldAI as a writing assistant this is best done in the regular mode with a model optimized for Novels. These models do not make the assumption that there is a You character and focus on Novel like writing. For writing these will often give you better results than Adventure or Generic models. That said, if you give it a good introduction to the story large generic models like 13B can be used if a more specific model is not available for what you wish to write. You can also try to use models that are not specific to what you wish to do, for example a NSFW Novel model for a SFW story if a SFW model is unavailable. This will mean you will have to correct the model more often because of its bias, but can still produce good enough results if it is familiar enough with your topic.
+Если вы хотите использовать KoboldAI как помощника в написании, лучше всего это делать в обычном режиме с моделью, оптимизированной для романов. Эти модели не предполагают наличие персонажа "Вы" и фокусируются на романном стиле написания. Для написания текстов они часто дадут вам лучшие результаты, чем модели для приключений или универсальные. Тем не менее, если вы дадите хорошее введение в историю, большие универсальные модели, такие как 13B, могут быть использованы, если более специфичная модель недоступна для того, что вы хотите написать. Вы также можете попробовать использовать модели, которые не специфичны для вашей задачи, например, NSFW-романную модель для SFW-истории, если SFW-модель недоступна. Это будет означать, что вам придется чаще исправлять модель из-за ее смещения, но она все еще может давать достаточно хорошие результаты, если достаточно хорошо знакома с вашей темой.
 
-### Chatbot Mode
+### Режим чат-бота
 
-In chatbot mode you can use a suitable model as a chatbot, this mode automatically adds your name to the beginning of the sentences and prevents the AI from talking as you. To use it properly you must write your story opening as both characters in the following format (You can use your own text) :
+В режиме чат-бота вы можете использовать подходящую модель в качестве чат-бота. Этот режим автоматически добавляет ваше имя в начало предложений и не позволяет ИИ говорить от вашего имени. Чтобы правильно его использовать, вы должны написать начало вашей истории в формате обоих персонажей (вы можете использовать свой собственный текст):
 
 ```plaintext
-Bot : Hey!
-You : Hey Boyname, how have you been?
-Bot : Been good! How about you?
-You : Been great to, excited to try out KoboldAI
-Bot : KoboldAI is really fun!
-You : For sure! What is your favorite game?
+Бот : Привет!
+Ты : Привет, Имяпарня, как ты поживаешь?
+Бот : Хорошо! А ты как?
+Ты : Тоже отлично, рад попробовать KoboldAI
+Бот : KoboldAI действительно веселая штука!
+Ты : Точно! Какая твоя любимая игра?
 ```
 
-Its recommended to have your own input be the last input, especially in the beginning its possible that the AI mixes up the names. In that case either retry or manually correct the name. This behavior improves as the chat progresses. Some models may swap names if they are more familiar with a different name that is similar to the name you defined for the bot. In that case you can either do the occasional manual correction or choose a name for your chatbot that the AI likes better.
+Рекомендуется, чтобы ваш собственный ввод был последним, особенно в начале возможно, что ИИ перепутает имена. В этом случае либо повторите попытку, либо вручную исправьте имя. Это поведение улучшается по мере развития чата. Некоторые модели могут менять имена местами, если они более знакомы с другим именем, похожим на имя, которое вы определили для бота. В этом случае вы можете либо периодически вручную исправлять, либо выбрать имя для вашего чат-бота, которое ИИ предпочитает больше.
 
-This mode works the best on either a Generic model or a chatbot model specifically designed for it, some models like the AvrilAI model are instead designed to be used in Adventure mode and do not conform to the format above. These models typically ship with adventure mode enabled by default and should not be switched over to chatbot mode.
+Этот режим лучше всего работает либо на универсальной модели, либо на модели чат-бота, специально предназначенной для него. Некоторые модели, такие как модель AvrilAI, наоборот, предназначены для использования в режиме приключения и не соответствуют приведенному выше формату. Обычно такие модели поставляются с режимом приключения, включенным по умолчанию, и их не следует переключать на режим чат-бота.
 
-Novel or Adventure models are not recommended for this feature but might still work but can derail away from the conversation format quickly.
+Романные модели или модели для приключений не рекомендуются для этой функции, но могут работать, хотя могут быстро отклониться от формата разговора.
 
-## Play KoboldAI online for free on Google Colab (The easiest way to play)
+## Играйте в KoboldAI онлайн бесплатно на Google Colab (Самый простой способ играть)
 
-If you would like to play KoboldAI online for free on a powerful computer you can use Google Colaboraty. We provide two editions, a TPU and a GPU edition with a variety of models available. These run entirely on Google's Servers and will automatically upload saves to your Google Drive if you choose to save a story (Alternatively, you can choose to download your save instead so that it never gets stored on Google Drive). Detailed instructions on how to use them are at the bottom of the Colab's.
+Если вы хотите играть в KoboldAI онлайн бесплатно на мощном компьютере, вы можете использовать Google Colaboratory. Мы предоставляем две версии: TPU и GPU, с различными доступными моделями. Они полностью работают на серверах Google и будут автоматически загружать сохранения на ваш Google Диск, если вы решите сохранить историю (Кроме того, вы можете выбрать загрузку сохранения на свой компьютер, чтобы оно никогда не сохранялось на Google Диске). Подробные инструкции по их использованию находятся внизу Colab-ов.
 
-Each edition features different models and requires different hardware to run, this means that if you are unable to obtain a TPU or a GPU you might still be able to use the other version. The models you can use are listed underneath the edition. To open a Colab click the big link featuring the editions name.
+Каждая версия предлагает различные модели и требует разного оборудования для работы. Это означает, что если вы не можете получить TPU или GPU, вы все равно сможете использовать другую версию. Модели, которые вы можете использовать, перечислены под названием версии. Чтобы открыть Colab, нажмите на большую ссылку с названием версии.
 
-## [Models the TPU can run:](https://colab.research.google.com/github/KoboldAI/KoboldAI-Client/blob/main/colab/TPU.ipynb)
+## [Модели, которые может запускать TPU:](https://colab.research.google.com/github/KoboldAI/KoboldAI-Client/blob/main/colab/TPU.ipynb)
 
-| Model | Style | Description |
+| Модель | Стиль | Описание |
 | --- | --- | --- |
-| [Nerys](https://huggingface.co/KoboldAI/fairseq-dense-13B-Nerys) by Mr Seeker | Novel/Adventure | Nerys is a hybrid model based on Pike (A newer Janeway), on top of the Pike dataset you also get some Light Novels, Adventure mode support and a little bit of Shinen thrown in the mix. The end result is a very diverse model that is heavily biased towards SFW novel writing, but one that can go beyond its novel training and make for an excellent adventure model to. Adventure mode is best played from a second person perspective, but can be played in first or third person as well. Novel writing can be done best from the first or third person. |
-| [Erebus](https://huggingface.co/KoboldAI/OPT-13B-Erebus) by Mr Seeker | NSFW | Erebus is our community's flagship NSFW model, being a combination of multiple large datasets that include Literotica, Shinen and erotic novels from Nerys and featuring thourough tagging support it covers the vast majority of erotic writing styles. This model is capable of replacing both the Lit and Shinen models in terms of content and style and has been well received as (one of) the best NSFW models out there. If you wish to use this model for commercial or non research usage we recommend choosing the 20B version as that one is not subject to the restrictive OPT license. |
-| [Janeway](https://huggingface.co/KoboldAI/fairseq-dense-13B-Janeway) by Mr Seeker | Novel | Janeway is a model created from Picard's dataset combined with a brand new collection of ebooks. This model is trained on 20% more content than Picard and has been trained on literature from various genres. Although the model is mainly focussed on SFW, romantic scenes might involve a degree of nudity. |
-| [Shinen](https://huggingface.co/KoboldAI/fairseq-dense-13B-Shinen) by Mr Seeker | NSFW | Shinen is an NSFW model trained on a variety of stories from the website Sexstories it contains many different kinks. It has been merged into the larger (and better) Erebus model. |
-| [Skein](https://huggingface.co/KoboldAI/GPT-J-6B-Skein) by VE\_FORBRYDERNE | Adventure | Skein is best used with Adventure mode enabled, it consists of a 4 times larger adventure dataset than the Adventure model making it excellent for text adventure gaming. On top of that it also consists of light novel training further expanding its knowledge and writing capabilities. It can be used with the You filter bias if you wish to write Novels with it, but dedicated Novel models can perform better for this task. |
-| [Adventure](https://huggingface.co/KoboldAI/GPT-J-6B-Adventure) by VE\_FORBRYDERNE | Adventure | Adventure is a 6B model designed to mimick the behavior of AI Dungeon. It is exclusively for Adventure Mode and can take you on the epic and wackey adventures that AI Dungeon players love. It also features the many tropes of AI Dungeon as it has been trained on very similar data. It must be used in second person (You). |
-| [Lit](https://huggingface.co/hakurei/lit-6B) ([V2](https://huggingface.co/hakurei/litv2-6B-rev3)) by Haru | NSFW | Lit is a great NSFW model trained by Haru on both a large set of Literotica stories and high quality novels along with tagging support. Creating a high quality model for your NSFW stories. This model is exclusively a novel model and is best used in third person. |
-| [OPT](https://huggingface.co/facebook/opt-13b) by Metaseq | Generic | OPT is considered one of the best base models as far as content goes, its behavior has the strengths of both GPT-Neo and Fairseq Dense. Compared to Neo duplicate and unnecessary content has been left out, while additional literature was added in similar to the Fairseq Dense model. The Fairseq Dense model however lacks the broader data that OPT does have. The biggest downfall of OPT is its license, which prohibits any commercial usage, or usage beyond research purposes. |
-| [Neo(X)](https://huggingface.co/EleutherAI/gpt-neox-20b) by EleutherAI | Generic | NeoX is the largest EleutherAI model currently available, being a generic model it is not particularly trained towards anything and can do a variety of writing, Q&A and coding tasks. 20B's performance is closely compared to the 13B models and it is worth trying both especially if you have a task that does not involve english writing. Its behavior will be similar to the GPT-J-6B model since they are trained on the same dataset but with more sensitivity towards repetition penalty and with more knowledge. |
-| [Fairseq Dense](https://huggingface.co/KoboldAI/fairseq-dense-13B) | Generic | Trained by Facebook Researchers this model stems from the MOE research project within Fairseq. This particular version has been converted by us for use in KoboldAI. It is known to be on par with the larger 20B model from EleutherAI and considered as better for pop culture and language tasks. Because the model has never seen a new line (enter) it may perform worse on formatting and paragraphing. Compared to other models the dataset focuses primarily on literature and contains little else. |
-| [GPT-J-6B](https://huggingface.co/EleutherAI/gpt-j-6B) by EleutherAI | Generic | This model serves as the basis for most other 6B models (Some being based on Fairseq Dense instead). Being trained on the Pile and not biased towards anything in particular it is suitable for a variety of tasks such as writing, Q&A and coding tasks. You will likely get better result with larger generic models or finetuned models. |
+| [Nerys](https://huggingface.co/KoboldAI/fairseq-dense-13B-Nerys) от Mr Seeker | Роман/Приключение | Nerys — это гибридная модель, основанная на Pike (более новой Janeway), поверх набора данных Pike вы также получаете немного легких романов, поддержку режима приключений и немного Shinen в придачу. Конечный результат — очень разнообразная модель, сильно смещенная в сторону SFW-написания романов, но способная выйти за пределы своего романного обучения и стать отличной моделью для приключений. Режим приключений лучше всего работает от второго лица, но также может использоваться от первого или третьего лица. Написание романов лучше всего получается от первого или третьего лица. |
+| [Erebus](https://huggingface.co/KoboldAI/OPT-13B-Erebus) от Mr Seeker | NSFW | Erebus — это флагманская NSFW-модель нашего сообщества, объединяющая несколько больших наборов данных, включая Literotica, Shinen и эротические романы от Nerys, и благодаря тщательной поддержке тегов она охватывает подавляющее большинство эротических стилей письма. Эта модель способна заменить модели Lit и Shinen по содержанию и стилю и была хорошо принята как одна из лучших NSFW-моделей. Если вы хотите использовать эту модель для коммерческих или не исследовательских целей, мы рекомендуем версию 20B, так как на нее не распространяется ограничительная лицензия OPT. |
+| [Janeway](https://huggingface.co/KoboldAI/fairseq-dense-13B-Janeway) от Mr Seeker | Роман | Janeway — это модель, созданная на основе набора данных Picard в сочетании с новой коллекцией электронных книг. Эта модель обучена на 20% большем объеме контента, чем Picard, и обучена на литературе различных жанров. Хотя модель в основном ориентирована на SFW, романтические сцены могут включать некоторую степень наготы. |
+| [Shinen](https://huggingface.co/KoboldAI/fairseq-dense-13B-Shinen) от Mr Seeker | NSFW | Shinen — это NSFW-модель, обученная на множестве историй с сайта Sexstories, она содержит много разных фетишей. Она была объединена в большую (и лучшую) модель Erebus. |
+| [Skein](https://huggingface.co/KoboldAI/GPT-J-6B-Skein) от VE\_FORBRYDERNE | Приключение | Skein лучше всего использовать с включенным режимом приключений, он состоит из набора данных для приключений, в 4 раза большего, чем модель Adventure, что делает его отличным для текстовых приключенческих игр. Плюс к этому он также включает обучение на легких романах, что еще больше расширяет его знания и писательские способности. Его можно использовать с фильтром смещения "Вы", если вы хотите писать с ним романы, но для этой задачи лучше подходят специализированные романные модели. |
+| [Adventure](https://huggingface.co/KoboldAI/GPT-J-6B-Adventure) от VE\_FORBRYDERNE | Приключение | Adventure — это модель 6B, предназначенная для имитации поведения AI Dungeon. Она исключительно для режима приключений и может отправить вас в эпические и причудливые приключения, которые так любят игроки AI Dungeon. Она также включает в себя множество тропов AI Dungeon, поскольку обучена на очень похожих данных. Она должна использоваться от второго лица ("Вы"). |
+| [Lit](https://huggingface.co/hakurei/lit-6B) ([V2](https://huggingface.co/hakurei/litv2-6B-rev3)) от Haru | NSFW | Lit — это отличная NSFW-модель, обученная Хару как на большом наборе историй с Literotica, так и на высококачественных романах с поддержкой тегов. Создание высококачественной модели для ваших NSFW-историй. Эта модель является исключительно романной моделью и лучше всего используется от третьего лица. |
+| [OPT](https://huggingface.co/facebook/opt-13b) от Metaseq | Универсальная | OPT считается одной из лучших базовых моделей с точки зрения контента, ее поведение сочетает в себе сильные стороны как GPT-Neo, так и Fairseq Dense. По сравнению с Neo, дублирующий и ненужный контент был исключен, а дополнительная литература была добавлена, как в модели Fairseq Dense. Однако модели Fairseq Dense не хватает более широких данных, которые есть у OPT. Самый большой недостаток OPT — это ее лицензия, которая запрещает любое коммерческое использование или использование вне исследовательских целей. |
+| [Neo(X)](https://huggingface.co/EleutherAI/gpt-neox-20b) от EleutherAI | Универсальная | NeoX — это самая большая доступная в настоящее время модель EleutherAI. Будучи универсальной моделью, она не обучена чему-то конкретному и может выполнять различные задачи написания текстов, вопросов-ответов и кодирования. Производительность 20B близка к производительности моделей 13B, и стоит попробовать обе, особенно если у вас есть задача, не связанная с написанием текстов на английском. Ее поведение будет похоже на модель GPT-J-6B, поскольку они обучены на одном и том же наборе данных, но с большей чувствительностью к штрафу за повторения и с большими знаниями. |
+| [Fairseq Dense](https://huggingface.co/KoboldAI/fairseq-dense-13B) | Универсальная | Обучена исследователями Facebook, эта модель происходит из исследовательского проекта MOE во Fairseq. Эта конкретная версия была преобразована нами для использования в KoboldAI. Известно, что она находится на одном уровне с более крупной моделью 20B от EleutherAI и считается лучшей для задач, связанных с поп-культурой и языком. Поскольку модель никогда не видела новой строки (enter), она может хуже работать с форматированием и абзацами. По сравнению с другими моделями, набор данных фокусируется в основном на литературе и содержит мало чего еще. |
+| [GPT-J-6B](https://huggingface.co/EleutherAI/gpt-j-6B) от EleutherAI | Универсальная | Эта модель служит основой для большинства других моделей 6B (некоторые основаны на Fairseq Dense). Будучи обученной на Pile и не имея смещения в какую-либо конкретную сторону, она подходит для различных задач, таких как написание текстов, вопросы-ответы и кодирование. Вы, вероятно, получите лучшие результаты с более крупными универсальными моделями или дообученными моделями. |
 
-## [Models the Colab GPU can run:](https://colab.research.google.com/github/KoboldAI/KoboldAI-Client/blob/main/colab/GPU.ipynb)
+## [Модели, которые может запускать Colab GPU:](https://colab.research.google.com/github/KoboldAI/KoboldAI-Client/blob/main/colab/GPU.ipynb)
 
-| Model | Style | Description |
+| Модель | Стиль | Описание |
 | --- | --- | --- |
-| [Nerys](https://huggingface.co/KoboldAI/fairseq-dense-2.7B-Nerys) by Mr Seeker | Novel/Adventure | Nerys is a hybrid model based on Pike (A newer Janeway), on top of the Pike dataset you also get some Light Novels, Adventure mode support and a little bit of Shinen thrown in the mix. The end result is a very diverse model that is heavily biased towards SFW novel writing, but one that can go beyond its novel training and make for an excellent adventure model to. Adventure mode is best played from a second person perspective, but can be played in first or third person as well. Novel writing can be done best from the first or third person. |
-| [Tiefighter 13B by KoboldAI](https://huggingface.co/KoboldAI/LLaMA2-13B-Tiefighter) | Hybrid | Tiefighter 13B is a very versitile fiction Hybrid, it can write, chat and play adventure games and can also answer regular instructions (Although we do not recommend this model for factual use due to its fictional nature). This is an excellent starting model, for the best results avoid using Second person writing in your chats unless you are wanting it to become a text adventure.|
-| [Janeway](https://huggingface.co/KoboldAI/GPT-Neo-2.7B-Janeway) by Mr Seeker | Novel | Janeway is a model created from Picard's dataset combined with a brand new collection of ebooks. This model is trained on 20% more content than Picard and has been trained on literature from various genres. Although the model is mainly focussed on SFW, romantic scenes might involve a degree of nudity. |
-| [Picard](https://huggingface.co/KoboldAI/GPT-Neo-2.7B-Picard) by Mr Seeker | Novel | Picard is a model trained for SFW Novels based on Neo 2.7B. It is focused on Novel style writing without the NSFW bias. While the name suggests a sci-fi model this model is designed for Novels of a variety of genre's. It is meant to be used in KoboldAI's regular mode. |
-| [AID](https://huggingface.co/KoboldAI/GPT-Neo-2.7B-AID) by melastacho | Adventure | Also know as Adventure 2.7B this is a clone of the AI Dungeon Classic model and is best known for the epic wackey adventures that AI Dungeon Classic players love. |
-| [OPT](https://huggingface.co/facebook/opt-2.7b) by Metaseq | Generic | OPT is considered one of the best base models as far as content goes, its behavior has the strengths of both GPT-Neo and Fairseq Dense. Compared to Neo duplicate and unnecessary content has been left out, while additional literature was added in similar to the Fairseq Dense model. The Fairseq Dense model however lacks the broader data that OPT does have. The biggest downfall of OPT is its license, which prohibits any commercial usage, or usage beyond research purposes. |
-| [Fairseq Dense](https://huggingface.co/KoboldAI/fairseq-dense-2.7B) | Generic | Trained by Facebook Researchers this model stems from the MOE research project within Fairseq. This particular version has been converted by us for use in KoboldAI. It is known to be on par with the larger models from EleutherAI and considered as better for pop culture and language tasks. Because the model has never seen a new line (enter) it may perform worse on formatting and paragraphing. Compared to other models the dataset focuses primarily on literature and contains little else. |
-| [MythoMax 13B](https://huggingface.co/TheBloke/MythoMax-L2-13B-GPTQ) by Gryphe | Roleplay | An improved, potentially even perfected variant of MythoMix, my MythoLogic-L2 and Huginn merge using a highly experimental tensor type merge technique¹. |
-| [Holomax 13B by KoboldAI](https://huggingface.co/KoboldAI/LLaMA2-13B-Holomax) | Adventure | This is an expansion merge to the well-praised MythoMax model from Gryphe (60%) using MrSeeker's KoboldAI Holodeck model (40%). The goal of this model is to enhance story-writing capabilities while preserving the desirable traits of the MythoMax model as much as possible (It does limit chat reply length). |
-| [Airoboros 13B](https://huggingface.co/jondurbin/airoboros-13b) by Jon Durbin | Generic | This is an instruction fine-tuned llama-2 model, using synthetic instructions generated by airoboros⁵. |
-| [Emerhyst 13B](https://huggingface.co/Undi95/Emerhyst-13B) by Undi | Roleplay | An attempt using BlockMerge_Gradient to get better result. In addition, LimaRP v3 was used⁷. |
-| [Chronos 13B](https://huggingface.co/elinas/chronos-13b) by Elinas | Generic | This model is primarily focused on chat, roleplay, and storywriting, but can accomplish other tasks such as simple reasoning and coding. Chronos generates very long outputs with coherent text, largely due to the human inputs it was trained on. |
-| [Spring Dragon by Henk717](https://huggingface.co/Henk717/spring-dragon) | Adventure | This model is a recreation attempt of the AI Dungeon 2 Dragon model. To achieve this, the "text_adventures.txt" dataset was used, which was bundled with the original AI Dungeon 2 GitHub release prior to the online service. It is worth noting that the same dataset file was used to create the Dragon model, where Dragon is a GPT-3 175B Davinci model from 2020. |
-| [Holodeck By KoboldAI](https://huggingface.co/KoboldAI/LLAMA2-13B-Holodeck-1) | Adventure |LLAMA2 13B-Holodeck is a finetune created using Meta's llama 2 model.The training data contains around 3000 ebooks in various genres. Most parts of the dataset have been prepended using the following text: [Genre: <genre1>, <genre2>|
-| [Neo](https://huggingface.co/EleutherAI/gpt-neo-2.7B) by EleutherAI | Generic | This is the base model for all the other 2.7B models, it is best used when you have a use case that we have no other models available for, such as writing blog articles or programming. It can also be a good basis for the experience of some of the softprompts if your softprompt is not about a subject the other models cover. |
-| [Various 2.7b models]() by various | Various smaller models are also possible to load in GPU colab. | |
-### Styles
+| [Nerys](https://huggingface.co/KoboldAI/fairseq-dense-2.7B-Nerys) от Mr Seeker | Роман/Приключение | Nerys — это гибридная модель, основанная на Pike (более новой Janeway), поверх набора данных Pike вы также получаете немного легких романов, поддержку режима приключений и немного Shinen в придачу. Конечный результат — очень разнообразная модель, сильно смещенная в сторону SFW-написания романов, но способная выйти за пределы своего романного обучения и стать отличной моделью для приключений. Режим приключений лучше всего работает от второго лица, но также может использоваться от первого или третьего лица. Написание романов лучше всего получается от первого или третьего лица. |
+| [Tiefighter 13B от KoboldAI](https://huggingface.co/KoboldAI/LLaMA2-13B-Tiefighter) | Гибридная | Tiefighter 13B — это очень универсальный художественный гибрид, он может писать, общаться и играть в приключенческие игры, а также отвечать на обычные инструкции (хотя мы не рекомендуем эту модель для фактического использования из-за ее художественной природы). Это отличная стартовая модель, для достижения наилучших результатов избегайте написания от второго лица в ваших чатах, если вы не хотите, чтобы он превратился в текстовое приключение. |
+| [Janeway](https://huggingface.co/KoboldAI/GPT-Neo-2.7B-Janeway) от Mr Seeker | Роман | Janeway — это модель, созданная на основе набора данных Picard в сочетании с новой коллекцией электронных книг. Эта модель обучена на 20% большем объеме контента, чем Picard, и обучена на литературе различных жанров. Хотя модель в основном ориентирована на SFW, романтические сцены могут включать некоторую степень наготы. |
+| [Picard](https://huggingface.co/KoboldAI/GPT-Neo-2.7B-Picard) от Mr Seeker | Роман | Picard — это модель, обученная для SFW-романов на основе Neo 2.7B. Она ориентирована на романный стиль письма без NSFW-смещения. Хотя название предполагает научно-фантастическую модель, эта модель предназначена для романов различных жанров. Она предназначена для использования в обычном режиме KoboldAI. |
+| [AID](https://huggingface.co/KoboldAI/GPT-Neo-2.7B-AID) от melastacho | Приключение | Также известная как Adventure 2.7B, это клон классической модели AI Dungeon и наиболее известна своими эпическими причудливыми приключениями, которые так любят игроки классического AI Dungeon. |
+| [OPT](https://huggingface.co/facebook/opt-2.7b) от Metaseq | Универсальная | OPT считается одной из лучших базовых моделей с точки зрения контента, ее поведение сочетает в себе сильные стороны как GPT-Neo, так и Fairseq Dense. По сравнению с Neo, дублирующий и ненужный контент был исключен, а дополнительная литература была добавлена, как в модели Fairseq Dense. Однако модели Fairseq Dense не хватает более широких данных, которые есть у OPT. Самый большой недостаток OPT — это ее лицензия, которая запрещает любое коммерческое использование или использование вне исследовательских целей. |
+| [Fairseq Dense](https://huggingface.co/KoboldAI/fairseq-dense-2.7B) | Универсальная | Обучена исследователями Facebook, эта модель происходит из исследовательского проекта MOE во Fairseq. Эта конкретная версия была преобразована нами для использования в KoboldAI. Известно, что она находится на одном уровне с более крупными моделями EleutherAI и считается лучшей для задач, связанных с поп-культурой и языком. Поскольку модель никогда не видела новой строки (enter), она может хуже работать с форматированием и абзацами. По сравнению с другими моделями, набор данных фокусируется в основном на литературе и содержит мало чего еще. |
+| [MythoMax 13B](https://huggingface.co/TheBloke/MythoMax-L2-13B-GPTQ) от Gryphe | Ролевая игра | Улучшенный, возможно, даже усовершенствованный вариант MythoMix, моего слияния MythoLogic-L2 и Huginn с использованием экспериментальной техники слияния тензорных типов¹. |
+| [Holomax 13B от KoboldAI](https://huggingface.co/KoboldAI/LLaMA2-13B-Holomax) | Приключение | Это расширенное слияние высоко оцененной модели MythoMax от Gryphe (60%) с использованием модели KoboldAI Holodeck от MrSeeker (40%). Цель этой модели — улучшить способности к написанию историй, максимально сохранив желаемые черты модели MythoMax (это ограничивает длину ответов чата). |
+| [Airoboros 13B](https://huggingface.co/jondurbin/airoboros-13b) от Jon Durbin | Универсальная | Это инструкционно доработанная модель llama-2, использующая синтетические инструкции, сгенерированные airoboros⁵. |
+| [Emerhyst 13B](https://huggingface.co/Undi95/Emerhyst-13B) от Undi | Ролевая игра | Попытка использовать BlockMerge_Gradient для получения лучшего результата. Кроме того, использовалась LimaRP v3⁷. |
+| [Chronos 13B](https://huggingface.co/elinas/chronos-13b) от Elinas | Универсальная | Эта модель в первую очередь ориентирована на чат, ролевые игры и написание историй, но может выполнять и другие задачи, такие как простые рассуждения и программирование. Chronos генерирует очень длинные выводы со связным текстом, во многом благодаря человеческим вводным данным, на которых он обучался. |
+| [Spring Dragon от Henk717](https://huggingface.co/Henk717/spring-dragon) | Приключение | Эта модель представляет собой попытку воссоздать модель AI Dungeon 2 Dragon. Для этого был использован набор данных "text_adventures.txt", который был включен в оригинальный релиз AI Dungeon 2 на GitHub до появления онлайн-сервиса. Стоит отметить, что тот же файл набора данных использовался для создания модели Dragon, где Dragon — это модель GPT-3 175B Davinci 2020 года. |
+| [Holodeck от KoboldAI](https://huggingface.co/KoboldAI/LLAMA2-13B-Holodeck-1) | Приключение | LLAMA2 13B-Holodeck — это доработанная модель, созданная с использованием модели llama 2 от Meta. Данные для обучения содержат около 3000 электронных книг в различных жанрах. Большая часть набора данных была дополнена следующим текстом: [Жанр: <жанр1>, <жанр2> |
+| [Neo](https://huggingface.co/EleutherAI/gpt-neo-2.7B) от EleutherAI | Универсальная | Это базовая модель для всех остальных моделей 2.7B, ее лучше всего использовать, когда у вас есть вариант использования, для которого у нас нет других моделей, например, написание статей в блоге или программирование. Она также может быть хорошей основой для опыта использования некоторых софтпромптов, если ваш софтпромпт не касается темы, которую охватывают другие модели. |
+| [Различные модели 2.7b]() от разных авторов | В GPU colab также можно загружать различные меньшие модели. | |
+### Стили
 
-| Type | Description |
+| Тип | Описание |
 | --- | --- |
-| Novel | For regular story writing, not compatible with Adventure mode or other specialty modes. |
-| NSFW | Indicates that the model is strongly biased towards NSFW content and is not suitable for children, work environments or livestreaming. Most NSFW models are also Novel models in nature. |
-| Adventure | These models are excellent for people willing to play KoboldAI like a Text Adventure game and are meant to be used with Adventure mode enabled. Even if you wish to use it as a Novel Type model you should always have Adventure mode on and set it to story. These models typically have a strong bias towards the use of the word You and without Adventure mode enabled break the story flow and write actions on your behalf. |
-| Hybrid | Hybrid models are a blend between different Types, for example they are trained on both Novel stories and Adventure stories. These models are great variety models that you can use for multiple different playTypes and modes, but depending on your usage you may need to enable Adventure Mode or the You bias (in userscripts). |
-| Generic | Generic models are not trained towards anything specific, typically used as a basis for other tasks and models. They can do everything the other models can do, but require much more handholding to work properly. Generic models are an ideal basis for tasks that we have no specific model for, or for experiencing a softprompt in its raw form. |
+| Роман | Для обычного написания историй, несовместим с режимом приключений или другими специальными режимами. |
+| NSFW | Указывает, что модель сильно смещена в сторону NSFW-контента и не подходит для детей, рабочей среды или прямых трансляций. Большинство NSFW-моделей по своей природе также являются романными моделями. |
+| Приключение | Эти модели отлично подходят для людей, желающих играть в KoboldAI как в текстовую приключенческую игру, и предназначены для использования с включенным режимом приключений. Даже если вы хотите использовать ее как модель для романа, вы всегда должны включать режим приключений и устанавливать его на "история". Эти модели, как правило, имеют сильное смещение в сторону использования слова "Вы", и без включенного режима приключений они нарушают ход истории и пишут действия от вашего имени. |
+| Гибридная | Гибридные модели представляют собой смесь различных типов, например, они обучаются как на романных, так и на приключенческих историях. Эти модели — отличные модели разнообразия, которые вы можете использовать для нескольких различных игровых типов и режимов, но в зависимости от вашего использования вам может потребоваться включить режим приключений или смещение "Вы" (в пользовательских скриптах). |
+| Универсальная | Универсальные модели не обучаются ничему конкретному, обычно используются как основа для других задач и моделей. Они могут делать все то же, что и другие модели, но требуют гораздо большего контроля для правильной работы. Универсальные модели являются идеальной основой для задач, для которых у нас нет специальной модели, или для знакомства с софтпромптом в его сыром виде. |
 
-## Tips to get the most out of Google Colab
+## Советы, как получить максимум от Google Colab
 
-*   Google will occationally show a Captcha, typically after it has been open for 30 minutes but it can be more frequent if you often use Colab. Make sure to do these properly, or you risk getting your instance shut down and getting a lower priority towards the TPU's.
-*   KoboldAI uses Google Drive to store your files and settings, if you wish to upload a softprompt or userscript this can be done directly on the Google Drive website. You can also use this to download backups of your KoboldAI related files or upload models of your own.
-*   Don't want to save your stories on Google Drive for privacy reasons? Do not use KoboldAI's save function and instead click Download as .json, this will automatically download the story to your own computer without ever touching Google's harddrives. You can load this back trough the Load from file option.
-*   Google shut your instance down unexpectedly? You can still make use of the Download as .json button to recover your story as long as you did not close the KoboldAI window. You can then load this back up in your next session.
-*   Done with KoboldAI? Go to the Runtime menu, click on Manage Sessions and terminate your open sessions that you no longer need. This trick can help you maintain higher priority towards getting a TPU.
-*   Models stored on Google Drive typically load faster than models we need to download from the internet.
+*   Google время от времени показывает капчу, обычно после того, как он открыт в течение 30 минут, но может быть чаще, если вы часто используете Colab. Обязательно правильно проходите их, иначе вы рискуете получить отключение вашего инстанса и получить более низкий приоритет доступа к TPU.
+*   KoboldAI использует Google Диск для хранения ваших файлов и настроек. Если вы хотите загрузить софтпромпт или пользовательский скрипт, это можно сделать непосредственно на сайте Google Диска. Вы также можете использовать это для загрузки резервных копий ваших файлов, связанных с KoboldAI, или загрузки собственных моделей.
+*   Не хотите сохранять свои истории на Google Диске из соображений конфиденциальности? Не используйте функцию сохранения KoboldAI и вместо этого нажмите "Скачать как .json". Это автоматически загрузит историю на ваш собственный компьютер, никогда не касаясь жестких дисков Google. Вы можете загрузить ее обратно через опцию "Загрузить из файла".
+*   Google неожиданно отключил ваш инстанс? Вы все равно можете использовать кнопку "Скачать как .json", чтобы восстановить свою историю, если вы не закрыли окно KoboldAI. Затем вы можете загрузить ее в следующей сессии.
+*   Закончили работу с KoboldAI? Перейдите в меню "Среда выполнения", нажмите "Управление сеансами" и завершите открытые сеансы, которые вам больше не нужны. Этот трюк может помочь вам сохранить более высокий приоритет при получении TPU.
+*   Модели, хранящиеся на Google Диске, обычно загружаются быстрее, чем модели, которые нам нужно загружать из интернета.
 
-## Install KoboldAI on your own computer
+## Установка KoboldAI на свой компьютер
 
-KoboldAI has a large number of dependencies you will need to install on your computer, unfortunately Python does not make it easy for us to provide instructions that work for everyone. The instructions below will work on most computers, but if you have multiple versions of Python installed conflicts can occur.
+KoboldAI имеет большое количество зависимостей, которые вам нужно будет установить на свой компьютер. К сожалению, Python не позволяет нам легко предоставить инструкции, которые будут работать для всех. Приведенные ниже инструкции будут работать на большинстве компьютеров, но если у вас установлено несколько версий Python, могут возникать конфликты.
 
-### Downloading the latest version of KoboldAI
+### Загрузка последней версии KoboldAI
 
-KoboldAI is a rolling release on our github, the code you see is also the game. You can download the software by clicking on the green Code button at the top of the page and clicking Download ZIP, or use the `git clone` command instead. Then, on Windows you need to you run install_requirements.bat (using admin mode is recommanded to avoid errors), and once it's done, or if you're on Linux, either play.bat/sh or remote-play.bat/sh to run it.
+KoboldAI — это rolling-релиз на нашем github, код, который вы видите, и есть игра. Вы можете загрузить программное обеспечение, нажав на зеленую кнопку "Code" в верхней части страницы и выбрав "Download ZIP", или использовав команду `git clone`. Затем в Windows вам нужно запустить install_requirements.bat (рекомендуется использовать режим администратора, чтобы избежать ошибок), и после его завершения, или если вы используете Linux, запустите play.bat/sh или remote-play.bat/sh.
 
-The easiest way for Windows users is to use the [offline installer](https://sourceforge.net/projects/koboldai/files/latest/download) below.
+Самый простой способ для пользователей Windows — использовать [офлайн-установщик](https://sourceforge.net/projects/koboldai/files/latest/download) ниже.
 
-### Installing KoboldAI offline bundle on Windows 7 or higher using the KoboldAI Offline Installer (Easiest)
+### Установка офлайн-версии KoboldAI на Windows 7 или выше с помощью офлайн-установщика KoboldAI (Самый простой)
 
-1.  [Download the latest offline installer from here](https://sourceforge.net/projects/koboldai/files/latest/download)
-2.  Run the installer to place KoboldAI on a location of choice, KoboldAI is portable software and is not bound to a specific harddrive. (Because of long paths inside our dependencies you may not be able to extract it many folders deep).
-3.  Update KoboldAI to the latest version with update-koboldai.bat if desired.
-4.  Use KoboldAI offline using play.bat or remotely with remote-play.bat
+1.  [Загрузите последнюю версию офлайн-установщика отсюда](https://sourceforge.net/projects/koboldai/files/latest/download)
+2.  Запустите установщик, чтобы разместить KoboldAI в выбранном месте. KoboldAI — это портативное программное обеспечение и не привязано к конкретному жесткому диску (из-за длинных путей внутри наших зависимостей вы не сможете распаковать его слишком глубоко во вложенных папках).
+3.  Обновите KoboldAI до последней версии с помощью update-koboldai.bat, если хотите.
+4.  Используйте KoboldAI офлайн с помощью play.bat или удаленно с помощью remote-play.bat
 
-### Installing KoboldAI Github release on Windows 10 or higher using the KoboldAI Runtime Installer
+### Установка релиза KoboldAI с Github на Windows 10 или выше с помощью установщика среды выполнения KoboldAI
 
-1.  Extract the .zip to a location you wish to install KoboldAI, you will need roughly 20GB of free space for the installation (this does not include the models).
-2.  Open install\_requirements.bat as **administrator**.
-3.  Choose the regular version of Transformers (Option 1), finetuneanon is depreciated and no longer recommended.
-4.  You will now be asked to choose the installation mode, we **strongly** recommend the Temporary B: drive option. This option eliminates most installation issues and also makes KoboldAI portable. The B: drive will be gone after a reboot and will automatically be recreated each time you play KoboldAI.
-5.  The installation will now automatically install its requirements, some stages may appear to freeze do not close the installer until it asks you to press a key. Before pressing a key to exit the installer please check if errors occurred. Most problems with the game crashing are related to installation/download errors. Disabling your antivirus can help if you get errors.
-6.  Use play.bat to start KoboldAI.
+1.  Распакуйте .zip в место, куда вы хотите установить KoboldAI. Вам потребуется примерно 20 ГБ свободного места для установки (это не включает модели).
+2.  Запустите install_requirements.bat от имени **администратора**.
+3.  Выберите обычную версию Transformers (Вариант 1), finetuneanon устарел и больше не рекомендуется.
+4.  Теперь вас спросят о выборе режима установки. Мы **настоятельно** рекомендуем временный вариант с диском B:. Этот вариант устраняет большинство проблем с установкой, а также делает KoboldAI портативным. Диск B: исчезнет после перезагрузки и будет автоматически пересоздаваться каждый раз при запуске KoboldAI.
+5.  Установка теперь автоматически установит необходимые зависимости. Некоторые этапы могут казаться зависшими. Не закрывайте установщик, пока он не попросит вас нажать клавишу. Перед тем как нажать клавишу для выхода из установщика, проверьте, не возникло ли ошибок. Большинство проблем с запуском игры связаны с ошибками установки/загрузки. Отключение антивируса может помочь, если вы получаете ошибки.
+6.  Используйте play.bat для запуска KoboldAI.
 
-### Installing KoboldAI on Linux using the KoboldAI Runtime (Easiest)
+### Установка KoboldAI на Linux с помощью среды выполнения KoboldAI (Самый простой)
 
-1.  Clone the URL of this Github repository (For example git clone [https://github.com/koboldai/koboldai-client](https://github.com/koboldai/koboldai-client) )
-2.  AMD user? Make sure ROCm is installed if you want GPU support. Is yours not compatible with ROCm? Follow the usual instructions.
-3.  Run play.sh or if your AMD GPU supports ROCm use play-rocm.sh
+1.  Клонируйте URL этого репозитория Github (например, git clone [https://github.com/koboldai/koboldai-client](https://github.com/koboldai/koboldai-client))
+2.  Пользователь AMD? Убедитесь, что установлен ROCm, если вы хотите использовать GPU. Ваша видеокарта несовместима с ROCm? Следуйте обычным инструкциям.
+3.  Запустите play.sh, или если ваш GPU AMD поддерживает ROCm, используйте play-rocm.sh
 
-KoboldAI will now automatically configure its dependencies and start up, everything is contained in its own conda runtime so we will not clutter your system. The files will be located in the runtime subfolder. If at any point you wish to force a reinstallation of the runtime you can do so with the install\_requirements.sh file. While you can run this manually it is not neccesary.
+KoboldAI теперь автоматически настроит свои зависимости и запустится. Все содержится в собственной среде выполнения conda, поэтому мы не засорим вашу систему. Файлы будут находиться в подпапке runtime. Если в любой момент вы захотите принудительно переустановить среду выполнения, вы можете сделать это с помощью файла install_requirements.sh. Хотя вы можете запустить его вручную, это не обязательно.
 
-### Manual installation / Mac
+### Ручная установка / Mac
 
-We can not provide a step by step guide for manual installation due to the vast differences between the existing software configuration and the systems of our users.
+Мы не можем предоставить пошаговое руководство для ручной установки из-за огромных различий в существующей конфигурации программного обеспечения и системах наших пользователей.
 
-If you would like to manually install KoboldAI you will need some python/conda package management knowledge to manually do one of the following steps :
+Если вы хотите вручную установить KoboldAI, вам понадобятся некоторые знания управления пакетами python/conda, чтобы вручную выполнить один из следующих шагов:
 
-1.  Use our bundled environments files to install your own conda environment, this should also automatically install CUDA (Recommended, you can get Miniconda from https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links). The recommended configuration is huggingface.yml for CUDA users and rocm.yml for ROCm users.
-2.  If conda is proving difficult you could also look inside requirements.txt for the required dependencies and try to install them yourself. This will likely be a mixture of pip and your native package manager, just installing our requirements.txt is not recommended since we assume local users will run conda to get all dependencies. For local installations definitely prioritize conda as that is a better way for us to enforce that you have the compatible versions.
-3.  Clone our Github or download the zip file.
-4.  Now start KoboldAI with aiserver.py and not with our play.bat or play.sh files.
+1.  Используйте наши файлы с окружением для установки собственного окружения conda. Это также должно автоматически установить CUDA (Рекомендуется, вы можете получить Miniconda по ссылке https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links). Рекомендуемая конфигурация — huggingface.yml для пользователей CUDA и rocm.yml для пользователей ROCm.
+2.  Если conda вызывает трудности, вы также можете посмотреть внутрь requirements.txt на предмет необходимых зависимостей и попытаться установить их самостоятельно. Скорее всего, это будет смесь pip и вашего родного менеджера пакетов. Простая установка нашего requirements.txt не рекомендуется, поскольку мы предполагаем, что локальные пользователи будут запускать conda для получения всех зависимостей. Для локальных установок определенно отдавайте предпочтение conda, так как это лучший способ для нас гарантировать, что у вас совместимые версии.
+3.  Клонируйте наш Github или загрузите zip-файл.
+4.  Теперь запустите KoboldAI с помощью aiserver.py, а не с помощью наших файлов play.bat или play.sh.
 
-### AMD GPU's (Linux only)
+### AMD GPU (только Linux)
 
-AMD GPU's have terrible compute support, this will currently not work on Windows and will only work for a select few Linux GPU's. [You can find a list of the compatible GPU's here](https://github.com/RadeonOpenCompute/ROCm#Hardware-and-Software-Support). Any GPU that is not listed is guaranteed not to work with KoboldAI and we will not be able to provide proper support on GPU's that are not compatible with the versions of ROCm we require. Make sure to first install ROCm on your Linux system using a guide for your distribution, after that you can follow the usual linux instructions above.
+Видеокарты AMD имеют ужасную поддержку вычислений. В настоящее время это не будет работать в Windows и будет работать только для избранных GPU Linux. [Вы можете найти список совместимых GPU здесь](https://github.com/RadeonOpenCompute/ROCm#Hardware-and-Software-Support). Любой GPU, не указанный в списке, гарантированно не будет работать с KoboldAI, и мы не сможем обеспечить надлежащую поддержку GPU, которые несовместимы с версиями ROCm, которые мы требуем. Сначала убедитесь, что установили ROCm в вашей системе Linux, используя руководство для вашего дистрибутива, после этого вы можете следовать обычным инструкциям для Linux выше.
 
-### Troubleshooting
+### Устранение неполадок
 
-There are multiple things that can go wrong with the way Python handles its dependencies, unfortunately we do not have direct step by step solutions for every scenario but there are a few common solutions you can try.
+Существует множество вещей, которые могут пойти не так с тем, как Python обрабатывает свои зависимости. К сожалению, у нас нет прямых пошаговых решений для каждого сценария, но есть несколько распространенных решений, которые вы можете попробовать.
 
 #### ModuleNotFoundError
 
-This is ALWAYS either a download/installation failure or a conflict with other versions of Python. This is very common if users chose the subfolder option during the installation while putting KoboldAI in a location that has spaces in the path. When an antivirus sandboxes the installation or otherwise interferes with the downloads, systems with low disk space or when your operating system was not configured for Long FIle Paths (The installer will do this on Windows 10 and higher if you run it as administrator, anything other than Windows 10 is not supported by our installers).
+Это ВСЕГДА либо ошибка загрузки/установки, либо конфликт с другими версиями Python. Это очень распространено, если пользователи выбрали опцию подпапки во время установки, поместив KoboldAI в место, содержащее пробелы в пути. Когда антивирус изолирует установку или иным образом мешает загрузке, в системах с низким дисковым пространством или когда ваша операционная система не настроена для длинных путей к файлам (Установщик сделает это в Windows 10 и выше, если вы запустите его от имени администратора; любые версии, отличные от Windows 10, не поддерживаются нашими установщиками).
 
-Another reason the installation may have failed is if you have conflicting installations of Python on your machine, if you press the Windows Key + R and enter %appdata% in the Run Dialog it will open the folder Python installs dependencies on some systems. If you have a Python folder in this location rename this folder and try to run the installer again. It should now no longer get stuck on existing dependencies. Try the game and see if it works well. If it does you can try renaming the folder back to see if it remains functional.
+Другая причина, по которой установка могла завершиться неудачей, — это наличие конфликтующих установок Python на вашем компьютере. Если вы нажмете клавишу Windows + R и введете %appdata% в диалоговом окне "Выполнить", откроется папка, в которую Python устанавливает зависимости в некоторых системах. Если у вас есть папка Python в этом месте, переименуйте ее и попробуйте запустить установщик снова. Теперь он не должен зависать на существующих зависимостях. Попробуйте игру и посмотрите, работает ли она хорошо. Если да, вы можете попробовать переименовать папку обратно, чтобы увидеть, останется ли она функциональной.
 
-The third reason the installation may have failed is if you have conda/mamba on your system for other reasons, in that case we recommend either removing your existing installations of python/conda if you do not need them and testing our installer again. Or using conda itself with our bundled environment files to let it create its runtime manually. **Keep in mind that if you go the manual route you should NEVER use play.bat but should instead run aiserver.py directly**.
+Третья причина, по которой установка могла завершиться неудачей, — это наличие conda/mamba в вашей системе для других целей. В этом случае мы рекомендуем либо удалить существующие установки python/conda, если они вам не нужны, и снова протестировать наш установщик, либо использовать conda с нашими файлами окружения, чтобы позволить ей создать среду выполнения вручную. **Имейте в виду, что если вы пойдете по ручному пути, вы НИКОГДА не должны использовать play.bat, а вместо этого запускать aiserver.py напрямую**.
 
-In general, the less versions of Python you have on your system the higher your chances of it installing correctly. We are consistently trying to mitigate these installation conflicts in our installers but for some users we can not yet avoid all conflicts.
+В общем, чем меньше версий Python у вас в системе, тем выше шансы на правильную установку. Мы постоянно пытаемся смягчить эти конфликты установки в наших установщиках, но для некоторых пользователей мы пока не можем избежать всех конфликтов.
 
-#### GPU not found errors
+#### Ошибки "GPU не найдена"
 
-GPU not found errors can be caused by one of two things, either you do not have a suitable Nvidia GPU (It needs Compute Capability 5.0 or higher to be able to play KoboldAI). Your Nvidia GPU is supported by KoboldAI but is not supported by the latest version of CUDA. Your Nvidia GPU is not yet supported by the latest version of CUDA or you have a dependency conflict like the ones mentioned above.
+Ошибки "GPU не найдена" могут быть вызваны одной из двух причин: либо у вас нет подходящего GPU Nvidia (он должен иметь вычислительную способность 5.0 или выше, чтобы играть в KoboldAI), либо ваш GPU Nvidia поддерживается KoboldAI, но не поддерживается последней версией CUDA, либо ваш GPU Nvidia еще не поддерживается последней версией CUDA, либо у вас есть конфликт зависимостей, подобный упомянутым выше.
 
-Like with Python version conflicts we recommend uninstalling CUDA from your system if you have manually installed it and do not need it for anything else and trying again. If your GPU needs CUDA10 to function open environments\\finetuneanon.yml and add a line that says - cudatoolkit=10.2 underneath dependencies: . After this you can run the installer again (Pick the option to delete the existing files) and it will download a CUDA10 compatible version.
+Как и в случае с конфликтами версий Python, мы рекомендуем удалить CUDA из вашей системы, если вы установили его вручную и он вам не нужен для чего-либо еще, и попробовать снова. Если вашему GPU требуется CUDA10 для работы, откройте environments\\finetuneanon.yml и добавьте строку `- cudatoolkit=10.2` под `dependencies:`. После этого вы можете снова запустить установщик (выберите опцию удаления существующих файлов), и он загрузит совместимую с CUDA10 версию.
 
-If you do not have a suitable Nvidia GPU that can run on CUDA10 or Higher and that supports Compute Capabilities 5.0 or higher we can not help you get the game detected on the GPU. Unless you are following our ROCm guide with a compatible AMD GPU.
+Если у вас нет подходящего GPU Nvidia, который может работать на CUDA10 или выше и поддерживает вычислительные возможности 5.0 или выше, мы не можем помочь вам запустить игру на GPU. Если только вы не следуете нашему руководству по ROCm с совместимым GPU AMD.
 
-#### vocab.json / config.json is not found error
+#### Ошибка "vocab.json / config.json не найден"
 
-If you get these errors you either did not select the correct folder for your custom model or the model you have downloaded is not (yet) compatible with KoboldAI. There exist a few models out there that are compatible and provide a pytorch\_model.bin file but do not ship all the required files. In this case try downloading a compatible model of the same kind (For example another GPT-Neo if you downloaded a GPT-Neo model) and replace the pytorch\_model.bin file with the one you are trying to run. Chances are this will work fine.
+Если вы получаете эти ошибки, вы либо не выбрали правильную папку для вашей пользовательской модели, либо загруженная вами модель еще не совместима с KoboldAI. Существует несколько моделей, которые совместимы и предоставляют файл pytorch_model.bin, но не поставляют все необходимые файлы. В этом случае попробуйте загрузить совместимую модель того же типа (например, другую GPT-Neo, если вы загрузили модель GPT-Neo) и замените файл pytorch_model.bin на тот, который вы пытаетесь запустить. Скорее всего, это сработает.
 
-## Softprompts
+## Софтпромпты
 
-Softprompts (also known as Modules in other products) are addons that can change the output of existing models. For example you may load a softprompt that biases the AI towards a certain subject and style like transcripts from your favorite TV show.
+Софтпромпты (также известные как Модули в других продуктах) — это дополнения, которые могут изменить вывод существующих моделей. Например, вы можете загрузить софтпромпт, который смещает ИИ в сторону определенной темы и стиля, например, расшифровок вашего любимого телешоу.
 
-Since these softprompts are often based on existing franchises we currently do not bundle any of them with KoboldAI due to copyright concerns (We do not want to put the entire project at risk). Instead look at community resources like #softprompts on the [KoboldAI Discord](https://discord.gg/XuQWadgU9k) or the [community hosted mirror](https://storage.henk.tech/KoboldAI/softprompts/).
+Поскольку эти софтпромпты часто основаны на существующих франшизах, мы в настоящее время не включаем их в KoboldAI из-за проблем с авторскими правами (мы не хотим подвергать риску весь проект). Вместо этого обратитесь к ресурсам сообщества, таким как #softprompts на [Discord-сервере KoboldAI](https://discord.gg/XuQWadgU9k) или [зеркало, размещенное сообществом](https://storage.henk.tech/KoboldAI/softprompts/).
 
-That way we are better protected from any DMCA claims as things can be taken down easier than directly on Github. If you have a copyright free softprompt that you made from scratch and is not based on existing IP that you would like to see officially bundled with KoboldAI issue a pull request with your softprompt.
+Таким образом, мы лучше защищены от любых жалоб DMCA, поскольку материалы можно удалить проще, чем напрямую на Github. Если у вас есть софтпромпт, свободный от авторских прав, созданный с нуля и не основанный на существующей интеллектуальной собственности, который вы хотели бы видеть официально включенным в KoboldAI, отправьте pull-request с вашим софтпромптом.
 
-Training softprompts can be done for free with the [Easy Softprompt Tuner](https://colab.research.google.com/gist/henk717/281fd57ebd2e88d852ef9dcc3f29bebf/easy-softprompt-tuner.ipynb#sandboxMode=true), in that case you can leave most of the settings default. Your source data needs to be a folder with text files that are UTF-8 formatted and contain Unix line endings.
+Обучение софтпромптов может быть выполнено бесплатно с помощью [Easy Softprompt Tuner](https://colab.research.google.com/gist/henk717/281fd57ebd2e88d852ef9dcc3f29bebf/easy-softprompt-tuner.ipynb#sandboxMode=true). В этом случае вы можете оставить большинство настроек по умолчанию. Ваши исходные данные должны быть папкой с текстовыми файлами в кодировке UTF-8, содержащими окончания строк в стиле Unix.
 
-## Userscripts
+## Пользовательские скрипты
 
-Userscripts are scripts that can automate tasks in KoboldAI, or modify the AI behavior / input / output.  
-Scripting is done in LUA5.4 (Lua does not need to be separately installed as long as you got all the python requirements) and has sandboxing to help protect you from malicious behavior. Even with these measures in place we strongly advise you only run userscripts from places you trust and/or understand, otherwise consult the community for advice on how safe the script might be.
+Пользовательские скрипты — это скрипты, которые могут автоматизировать задачи в KoboldAI или изменять поведение / ввод / вывод ИИ. Скриптинг выполняется на LUA5.4 (Lua не нужно устанавливать отдельно, если вы получили все требования python) и имеет изоляцию, чтобы помочь защитить вас от вредоносного поведения. Даже с этими мерами мы настоятельно рекомендуем вам запускать пользовательские скрипты только из надежных источников и/или понимать их суть, в противном случае обратитесь к сообществу за советом о том, насколько безопасен может быть скрипт.
 
-Inside the userscripts folder you will find our kaipreset scripts, these are default scripts that we think will be useful for our users. These scripts are automatically overwritten when you update KoboldAI, if you wish to modify these scripts make sure to first rename them to something else that does not contain kaipreset so your changes are not lost. These scripts range from a You Bias filter that prevents the AI from addressing characters as you. Ways to be able to prevent the AI from using words, word replacements and more.
+В папке userscripts вы найдете наши скрипты kaipreset — это стандартные скрипты, которые, как мы думаем, будут полезны нашим пользователям. Эти скрипты автоматически перезаписываются при обновлении KoboldAI. Если вы хотите изменить эти скрипты, обязательно сначала переименуйте их во что-то другое, что не содержит kaipreset, чтобы ваши изменения не были потеряны. Эти скрипты варьируются от фильтра смещения "Вы", который не позволяет ИИ обращаться к персонажам как к вам, до способов предотвратить использование ИИ определенных слов, замены слов и многого другого.
 
-Along with our preset scripts we also ship examples in the examples folder that merely serve as a demonstration and do not enhance your usage of KoboldAI. To use these scripts make sure to move them out of the examples folder before either using or modifying the script.
+Наряду с нашими предустановленными скриптами мы также поставляем примеры в папке examples, которые служат лишь для демонстрации и не улучшают ваше использование KoboldAI. Чтобы использовать эти скрипты, переместите их из папки examples перед использованием или изменением скрипта.
 
-Lastly the all the features of our userscript API are documented inside the API Documentation files inside the userscripts folder.
+Наконец, все функции нашего API пользовательских скриптов задокументированы в файлах документации API внутри папки userscripts.
 
-For our TPU versions keep in mind that scripts modifying AI behavior relies on a different way of processing that is slower than if you leave these userscripts disabled even if your script only sporadically uses this modifier. If you want to partially use a script at its full speed than you can enable "No Gen Modifiers" to ensure that the parts that would make the TPU slow are not active.
+Для наших версий TPU имейте в виду, что скрипты, изменяющие поведение ИИ, полагаются на другой способ обработки, который медленнее, чем если бы вы оставили эти пользовательские скрипты отключенными, даже если ваш скрипт лишь изредка использует этот модификатор. Если вы хотите частично использовать скрипт на полной скорости, вы можете включить "No Gen Modifiers", чтобы гарантировать, что части, которые замедляют TPU, не активны.
 
 ## API
 
-KoboldAI has a REST API that can be accessed by adding /api to the URL that Kobold provides you (For example http://127.0.0.1:5000/api).  
-When accessing this link in a browser you will be taken to the interactive documentation.
+KoboldAI имеет REST API, доступ к которому можно получить, добавив /api к URL, который предоставляет Kobold (например, http://127.0.0.1:5000/api). При переходе по этой ссылке в браузере вы попадете в интерактивную документацию.
 
-## Contributors
+## Участники
 
-This project contains work from the following contributors :
+Этот проект содержит работу следующих участников:
 
-*   The Gantian - Creator of KoboldAI, has created most features such as the interface, the different AI model / API integrations and in general the largest part of the project.
-*   VE FORBRYDERNE - Contributed many features such as the Editing overhaul, Adventure Mode, expansions to the world info section, breakmodel integration, scripting support, API, softpromtps and much more. As well as vastly improving the TPU compatibility and integrating external code into KoboldAI so we could use official versions of Transformers with virtually no downsides.
-*   Henk717 - Contributed the installation scripts, this readme, random story generator, the docker scripts, the foundation for the commandline interface and other smaller changes as well as integrating multiple parts of the code of different forks to unite it all. He also optimized the model loading so that downloaded models get converted to efficient offline models and that in future models are more likely to work out of the box. Not all code Github attributes to Henk717 is by Henk717 as some of it has been integrations of other people's work. We try to clarify this in the contributors list as much as we can.
-*   Ebolam - Automatic Saving, back/redo, pinning, web loading of models
-*   one-some, Logits Viewer and Token Streaming
-*   db0, KoboldAI Horde
-*   Frogging101 - top\_k / tfs support (Part of this support was later redone by VE to integrate what was originally inside of finetuneanon's transformers)
-*   UWUplus (Ralf) - Contributed storage systems for community colabs, as well as cleaning up and integrating the website dependencies/code better. He is also the maintainer of flask-cloudflared which we use to generate the cloudflare links.
-*   Javalar - Initial Performance increases on the story\_refresh
-*   LexSong - Initial environment file adaptation for conda that served as a basis for the install\_requirements.bat overhaul.
-*   Arrmansa - Breakmodel support for other projects that served as a basis for VE FORBRYDERNE's integration.
-*   Jojorne - Small improvements to the response selection for gens per action.
-*   OccultSage (GooseAI) - Improved support for GooseAI/OpenAI
+*   The Gantian — Создатель KoboldAI, создал большинство функций, таких как интерфейс, различные интеграции моделей ИИ / API и, в целом, самую большую часть проекта.
+*   VE FORBRYDERNE — Внес вклад во многие функции, такие как обновление редактирования, режим приключений, расширения раздела "Мировая информация", интеграцию breakmodel, поддержку скриптов, API, софтпромпты и многое другое. А также значительно улучшил совместимость с TPU и интегрировал внешний код в KoboldAI, чтобы мы могли использовать официальные версии Transformers практически без недостатков.
+*   Henk717 — Внес вклад в скрипты установки, этот README, генератор случайных историй, скрипты docker, основу для интерфейса командной строки и другие небольшие изменения, а также интегрировал несколько частей кода разных форков, чтобы объединить все это. Он также оптимизировал загрузку моделей, чтобы загруженные модели преобразовывались в эффективные офлайн-модели, и чтобы в будущем модели с большей вероятностью работали из коробки. Не весь код, который Github приписывает Henk717, написан Henk717, так как некоторые из них были интеграциями работ других людей. Мы стараемся максимально прояснить это в списке участников.
+*   Ebolam — Автоматическое сохранение, назад/повтор, закрепление, веб-загрузка моделей.
+*   one-some — Просмотр логгитов и потоковая передача токенов.
+*   db0 — KoboldAI Horde.
+*   Frogging101 — Поддержка top_k / tfs (часть этой поддержки позже была переделана VE для интеграции того, что изначально было внутри finetuneanon's transformers).
+*   UWUplus (Ralf) — Внес вклад в системы хранения для общественных colab, а также в улучшение очистки и интеграцию зависимостей/кода веб-сайта. Он также является сопровождающим flask-cloudflared, который мы используем для генерации ссылок cloudflare.
+*   Javalar — Начальные улучшения производительности для story_refresh.
+*   LexSong — Начальная адаптация файла окружения для conda, которая послужила основой для обновления install_requirements.bat.
+*   Arrmansa — Поддержка breakmodel для других проектов, которая послужила основой для интеграции VE FORBRYDERNE.
+*   Jojorne — Небольшие улучшения выбора ответа для генераций на действие.
+*   OccultSage (GooseAI) — Улучшенная поддержка GooseAI/OpenAI.
 
-As well as various Model creators who will be listed near their models, and all the testers who helped make this possible!
+А также различные создатели моделей, которые будут перечислены рядом с их моделями, и все тестеры, которые помогли сделать это возможным!
 
-Did we miss your contribution? Feel free to issue a commit adding your name to this list.
+Мы пропустили ваш вклад? Не стесняйтесь отправить коммит, добавив свое имя в этот список.
 
-## License
+## Лицензия
 
-KoboldAI is licensed with a AGPL license, in short this means that it can be used by anyone for any purpose. However, if you decide to make a publicly available instance your users are entitled to a copy of the source code including all modifications that you have made (which needs to be available trough an interface such as a button on your website), you may also not distribute this project in a form that does not contain the source code (Such as compiling / encrypting the code and distributing this version without also distributing the source code that includes the changes that you made. You are allowed to distribute this in a closed form if you also provide a separate archive with the source code.).
+KoboldAI лицензирована по лицензии AGPL. Если кратко, это означает, что она может использоваться кем угодно для любых целей. Однако, если вы решите создать общедоступный инстанс, ваши пользователи имеют право на копию исходного кода, включая все внесенные вами изменения (который должен быть доступен через интерфейс, например, кнопку на вашем веб-сайте). Вы также не можете распространять этот проект в форме, не содержащей исходный код (например, компилируя/шифруя код и распространяя эту версию без одновременного распространения исходного кода, включающего внесенные вами изменения. Вам разрешается распространять это в закрытой форме, если вы также предоставляете отдельный архив с исходным кодом).
 
-umamba.exe is bundled for convenience because we observed that many of our users had trouble with command line download methods, it is not part of our project and does not fall under the AGPL license. It is licensed under the BSD-3-Clause license. Other files with differing licenses will have a reference or embedded version of this license within the file. It has been sourced from https://anaconda.org/conda-forge/micromamba/files and its source code can be found here : https://github.com/mamba-org/mamba/tree/master/micromamba
+umamba.exe включен для удобства, потому что мы заметили, что у многих наших пользователей возникали проблемы с методами загрузки из командной строки. Он не является частью нашего проекта и не подпадает под действие лицензии AGPL. Он лицензирован по лицензии BSD-3-Clause. Другие файлы с другими лицензиями будут содержать ссылку или встроенную версию этой лицензии внутри файла. Он был получен с https://anaconda.org/conda-forge/micromamba/files, и его исходный код можно найти здесь: https://github.com/mamba-org/mamba/tree/master/micromamba
+```
